@@ -16,6 +16,15 @@ h1, h2, h3 {
     font-weight: normal;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
 *,
 *::after,
 *::before {
@@ -39,6 +48,18 @@ h1, h2, h3 {
     font-weight: 700;
     text-transform: uppercase;
     color: #95945b;
+}
+
+.email_link,
+.git_link,
+.map_link,
+.project_link {
+    text-decoration: none;
+    color: #95945b;
+}
+
+.font_awesome {
+    color: #5e694f;
 }
 
 /* Header */
@@ -85,7 +106,6 @@ h1, h2, h3 {
 }
 
 /* Introduce */
-
 .introduce_inner {
     display: flex;
     justify-content: space-between;
@@ -128,7 +148,7 @@ h1, h2, h3 {
     width: 70%;
     padding: 15px 80px;
 
-    border-radius: 10px 5px;
+    border-radius: 10px;
     transform: skewX(20deg);
     background: linear-gradient(96.49deg, #5e694f 5.08%, #f2f29d 100.01%);
 }
@@ -164,7 +184,7 @@ h1, h2, h3 {
     margin-left: -20px;
     width: 35%;
 
-    border-radius: 10px 5px;
+    border-radius: 10px;
     transform: skewX(20deg);
     background: linear-gradient(102.76deg, rgba(236, 236, 238, 0.7), rgba(248, 247, 248, 0) 84.59%);
 }
@@ -198,39 +218,28 @@ main {
     background: rgba(236, 236, 238, 0.4);
 }
 
-.pro_skill {
-    padding: 0 60px;
-}
-
-.personal_skill {
-    padding: 0 60px;
-}
-
-.language {
-    padding: 0 60px;
+.pro_skill,
+.project,
+.language,
+.code_example,
+.contact        {
+    padding: 0 0 20px 60px;
 }
 
 .code_example {
-    position: relative;
+    margin-top: 50px;
+}
 
-    padding: 0 60px;
+.code_example_inner {
+    padding: 10px 0;
+    margin-left: -60px;
+
+    background: rgba(236, 236, 238, 0.6);
 }
 
 .code {
-    position: absolute;
-}
-
-
-
-.contact {
-    padding: 0 60px;
-}
-
-.email_link,
-.git_link,
-.map_link {
-    text-decoration: none;
-    color: #95945b;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .image_logo {
