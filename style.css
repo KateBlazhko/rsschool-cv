@@ -53,7 +53,8 @@ li {
 .email_link,
 .git_link,
 .map_link,
-.project_link {
+.project_link,
+.course_link    {
     text-decoration: none;
     color: #95945b;
 }
@@ -85,7 +86,7 @@ li {
 
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
     color: #95945b;
 }
 
@@ -242,11 +243,6 @@ main {
     margin: 0 auto;
 }
 
-.image_logo {
-    width: 10%;
-    height: 10%;
-}
-
 /* Column two */
 .column_two {
     width: 70%;
@@ -311,3 +307,18 @@ main {
     text-align: justify;
 }
 
+/* Footer */
+.footer_inner {
+    display: flex;
+    align-items: center;
+}
+
+.footer_inner_item {
+    flex: 1 1;
+    padding-left: 70px;
+}
+
+.image_logo {
+    width: 10%;
+    height: 10%;
+}
