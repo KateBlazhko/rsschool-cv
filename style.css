@@ -1,0 +1,103 @@
+/* General container */
+.general_container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    width: 100%;
+    padding-top: 10px;
+}
+
+.nav {
+    text-align: end;
+}
+
+/* Introduce */
+
+.introduce_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.introduce_image {
+    width: 30%;
+}
+
+.my_photo {
+    display: block;
+}
+
+.introduce_statement {
+    width: 60%;
+    padding: 0 55px;
+}
+
+.introduce_tittle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.introduce_tittle_main {
+
+}
+
+
+/* Main */
+main {
+    width: 100%;
+}
+
+.main_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Column one */
+.column_one {
+    width: 30%;
+    background: rgba(236, 236, 238, 0.4);
+}
+
+.pro_skill {
+    padding: 0 60px;
+}
+
+.personal_skill {
+    padding: 0 60px;
+}
+
+.language {
+    padding: 0 60px;
+}
+
+.code_example {
+    padding: 0 60px;
+}
+
+.contact {
+    padding: 0 60px;
+}
+
+.image_logo {
+    width: 10%;
+    height: 10%;
+}
+
+/* Column two */
+.column_two {
+    width: 60%;
+    padding: 0 55px;
+}
