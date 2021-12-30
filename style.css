@@ -107,7 +107,7 @@ li {
 }
 
 /* Introduce */
-.introduce_inner {
+.introduce {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -129,8 +129,14 @@ li {
 }
 
 .introduce_statement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     width: 70%;
-    padding: 70px 0 0 60px;
+    padding-left: 100px;
+
+
 }
 
 .introduce_statement_content {
@@ -149,12 +155,12 @@ li {
 
 .introduce_transform_main {
     position: relative;
-    left: -20px;
+    left: -25px;
 
     width: 70%;
     padding: 15px 80px;
 
-    border-radius: 10px;
+    border-radius: 10px 5px;
     transform: skewX(20deg);
     background: linear-gradient(96.49deg, #5e694f 5.08%, #f2f29d 100.01%);
 }
