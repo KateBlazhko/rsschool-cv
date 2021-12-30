@@ -3,7 +3,7 @@ body {
 
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.7;
     letter-spacing: 0.05em;
@@ -44,7 +44,7 @@ li {
 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
     color: #95945b;
@@ -86,7 +86,7 @@ li {
 
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 14px;
     color: #95945b;
 }
 
@@ -229,7 +229,7 @@ main {
 .language,
 .code_example,
 .contact        {
-    padding: 0 0 20px 60px;
+    padding: 0 0 20px 70px;
 }
 
 .code_example {
@@ -238,7 +238,7 @@ main {
 
 .code_example_inner {
     padding: 10px 0;
-    margin-left: -60px;
+    margin-left: -70px;
 
     background: rgba(236, 236, 238, 0.6);
 }
@@ -280,7 +280,7 @@ main {
 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 600;
     color: #999999;
 }
@@ -291,7 +291,7 @@ main {
 
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
     color: #262626;
@@ -301,7 +301,7 @@ main {
 .education_place {
     margin-bottom: 10px;
 
-    font-size: 12px;
+    font-size: 14px;
     color: #9B9B9B;
 }
 
