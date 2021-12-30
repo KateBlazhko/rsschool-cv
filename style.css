@@ -132,11 +132,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     width: 70%;
     padding-left: 100px;
-
-
 }
 
 .introduce_statement_content {
