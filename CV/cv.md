@@ -1,4 +1,4 @@
-![MyPhoto](myPhoto.jpg)
+![MyPhoto](assets/img/myPhoto.jpg)
 # **Kate Blazhko**
 
 ## Contact information:
