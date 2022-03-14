@@ -13,27 +13,38 @@
 <body>
     <header class="header">
         <div class="general_container">
-            <nav class="nav">
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="#pro_skill" class="nav_link">Skills</a></li>
-                    <li class="nav_item"><a href="#project" class="nav_link">Projects</a></li>
-                    <li class="nav_item"><a href="#language" class="nav_link">Languages</a></li>
-                    <li class="nav_item"><a href="#contact" class="nav_link">Contacts</a></li>
-                    <li class="nav_item"><a href="#code_example" class="nav_link">Code example</a></li>
-                    <li class="nav_item"><a href="#work_experience" class="nav_link">Work experience</a></li>
-                    <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
-                </ul>
-            </nav>
+            <div class="header_inner">
+                <div class="introduce_image"></div>
+                <div class="introduce_wrap">
+                    <div class="nav_wrap">
+                        <nav class="nav">
+                            <ul class="nav_list">
+                                <li class="nav_item"><a href="#pro_skill" class="nav_link">Skills</a></li>
+                                <li class="nav_item"><a href="#project" class="nav_link">Projects</a></li>
+                                <li class="nav_item"><a href="#language" class="nav_link">Languages</a></li>
+                                <li class="nav_item"><a href="#contact" class="nav_link">Contacts</a></li>
+                                <li class="nav_item"><a href="#code_example" class="nav_link">My Code</a></li>
+                                <li class="nav_item"><a href="#work_experience" class="nav_link">Experience</a></li>
+                                <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menu-toggle">
+                        <span class="menu-toggle-line"></span>
+                        <span class="menu-toggle-line"></span>
+                        <span class="menu-toggle-line"></span>
+                    </div>
+                    <div class="introduce_statement">
+                        <h2 class="tittle_section">Statement</h2>
+                        <div class="introduce_statement_content">Until now I’ve lacked a guide who would help me to find myself in IT and to move on. I really hope RSSchool courses will become such a guid fo me!</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <main>
         <div class="general_container">
             <section class="introduce">
-                <div class="introduce_image"></div>
-                <div class="introduce_statement">
-                    <h2 class="tittle_section">Statement</h2>
-                    <div class="introduce_statement_content">Until now I’ve lacked a guide who would help me to find myself in IT and to move on. I really hope RSSchool courses will become such a guid fo me!</div>
-                </div>
                 <div class="introduce_tittle">
                     <div class="introduce_transform_main">
                         <div class="introduce_tittle_main">
@@ -57,18 +68,16 @@
                 <div class="column_one" >
                     <section class="pro_skill" id="pro_skill">
                         <h2 class="tittle_section">Pro skill</h2>
-                        <ul>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript Basics</li>
-                            <li>Git, GitHub</li>
-                            <li>VS Code</li>
+                        <ul class="list_skill">
+                            <li class="item_skill">HTML/CSS</li>
+                            <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <li class="item_skill">JavaScript Basics</li>
+                            <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <li class="item_skill">Git, GitHub</li>
+                            <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <li class="item_skill">VS Code</li>
+                            <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                         </ul>
-                    </section>
-                    <section class="project" id="project">
-                        <h2 class="tittle_section">Projects</h2>
-                        <div class="project_inner">My first project: <a class="project_link" href="https://KateBlazhko.github.io/rsschool-cv/">CV</a>
-                        </div>
-
                     </section>
                     <section class="language" id="language">
                         <h2 class="tittle_section">Language</h2>
@@ -85,7 +94,69 @@
                             <li><span class="font_awesome"><i class="fab fa-github"></i></span> <a class="git_link" href="https://github.com/KateBlazhko">KateBlazhko</a></li>
                         </ul>
                     </section>
+                </div> <!--column_one-->
+                <div class="column_two" >
+                    <section class="work_experience" id="work_experience">
+                        <div class="tittle_image"><i class="fas fa-briefcase"></i></div>
+                        <h2 class="tittle_section">Work experience</h2>
+                        <div class="work_item">
+                            <div class="work_year">2019</div>
+                            <input type="checkbox" id="check-1" />
+				            <label for="check-1">Housewife</label>
+                            <article>
+                                <div class="work_place">Vileika</div>
+                                <div class="work_description">Since 2019 I’ve been on maternity leave and I’ve realized this is my chance for self-development, the opportunity to find my place in this multifaceted field. I’ve started studying English with a teacher, to learn the basics of web development, programming and databases on my own.</div>
+                            </article>
+                        </div>
+                        <div class="work_item">
+                            <div class="work_year">2013</div>
+                            <input type="checkbox" id="check-2" />
+				            <label for="check-2">Medical equipment engineer</label>
+                            <article>
+                                <div class="work_place">Hospital, Vileika</div>
+                                <div class="work_description">My responsibilities included providing maintenance, repair and procurement of different medical equipment for the needs of the hospital. That job was new for me and I had to independently search for all the necessary information about various medical equipment (types, purpose, manufacturers, evaluation criteria). I also had to contact a large number of specialists from other departments and other organizations as well. As a matter of fact Procurement legislation is constantly changing. So it was necessary to adjust all the time and to change the work order according to the new conditions. I believe that thanks to working together with my coworkers I managed to successfully cope with my duties.</div>
+                            </article>
+                        </div>
+                        <div class="work_item">
+                            <div class="work_year">2011</div>
+                            <input type="checkbox" id="check-3" />
+				            <label for="check-3">Design engineer</label>
+                            <article>
+                                <div class="work_place">Ryazan</div>
+                                <div class="work_description">My main task was to develop design documentation from scratch in a small but fast growing company. Under the pressure of time it was necessary to think over and implement the system of design documentation understandable for everyone. As a result I managed to establish contacts with all the departments of the company, collect all the necessary information, opinions of some other employees and to solve the problem.</div>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="education" id="education">
+                        <div class="tittle_image"><i class="fas fa-graduation-cap"></i></div>
+                        <h2 class="tittle_section">Education</h2>
+                        <div class="education_item">
+                            <div class="education_year">2022</div>
+                            <input type="checkbox" id="check-4" />
+				            <label for="check-4">Course of "JavaScript/Frontend"</label>
+                            <article>
+                                <div class="education_place">RSSchool</div>
+                                <div class="education_description">Free beginner's course</div>
+                            </article>
+                        </div>
+                        <div class="education_item">
+                            <div class="education_year">2011</div>
+                            <input type="checkbox" id="check-5" />
+				            <label for="check-5">Ryazan State Radio Engineering University named after V.F. Utkin</label>
+                            <article>
+                                <div class="education_place">Ryazan</div>
+                                <div class="education_description">Faculty of Computer Science, department of Computer Aided Design of Computing Facilities</div>
+                            </article>
+                        </div>
+                    </section>
+                    <section class="project" id="project">
+                        <div class="tittle_image"><i class="fas fa-project-diagram"></i></div>
+                        <h2 class="tittle_section">Projects</h2>
+                        <div class="project_inner">My first project: <a class="project_link" href="https://KateBlazhko.github.io/rsschool-cv/">CV</a>
+                        </div>
+                    </section>
                     <section class="code_example" id="code_example">
+                        <div class="tittle_image"><i class="fab fa-js"></i></div>
                         <h2 class="tittle_section">Code example</h2>
                         <div class="code_example_inner">
 <pre class="code"><code class="language-javascript">function isDivideBy(number, a, b) {
@@ -95,46 +166,6 @@
     }
     return false;
   }</code></pre>
-                        </div>
-                    </section>
-                </div> <!--column_one-->
-                <div class="column_two" >
-                    <section class="work_experience" id="work_experience">
-                        <div class="tittle_image"><i class="fas fa-briefcase"></i></div>
-                        <h2 class="tittle_section">Work experience</h2>
-                        <div class="work_item">
-                            <div class="work_year">2019</div>
-                            <h3 class="work_post">Housewife</h3>
-                            <div class="work_place">Vileika</div>
-                            <div class="work_description">Since 2019 I’ve been on maternity leave and I’ve realized this is my chance for self-development, the opportunity to find my place in this multifaceted field. I’ve started studying English with a teacher, to learn the basics of web development, programming and databases on my own.</div>
-                        </div>
-                        <div class="work_item">
-                            <div class="work_year">2013</div>
-                            <h3 class="work_post">Medical equipment engineer</h3>
-                            <div class="work_place">Hospital, Vileika</div>
-                            <div class="work_description">My responsibilities included providing maintenance, repair and procurement of different medical equipment for the needs of the hospital. That job was new for me and I had to independently search for all the necessary information about various medical equipment (types, purpose, manufacturers, evaluation criteria). I also had to contact a large number of specialists from other departments and other organizations as well. As a matter of fact Procurement legislation is constantly changing. So it was necessary to adjust all the time and to change the work order according to the new conditions. I believe that thanks to working together with my coworkers I managed to successfully cope with my duties.</div>
-                        </div>
-                        <div class="work_item">
-                            <div class="work_year">2011</div>
-                            <h3 class="work_post">Design engineer</h3>
-                            <div class="work_place">Ryazan</div>
-                            <div class="work_description">My main task was to develop design documentation from scratch in a small but fast growing company. Under the pressure of time it was necessary to think over and implement the system of design documentation understandable for everyone. As a result I managed to establish contacts with all the departments of the company, collect all the necessary information, opinions of some other employees and to solve the problem.</div>
-                        </div>
-                    </section>
-                    <section class="education" id="education">
-                        <div class="tittle_image"><i class="fas fa-graduation-cap"></i></div>
-                        <h2 class="tittle_section">Education</h2>
-                        <div class="education_item">
-                            <div class="education_year">2022</div>
-                            <h3 class="education_post">Course of "JavaScript/Frontend"</h3>
-                            <div class="education_place">RSSchool</div>
-                            <div class="education_description">Free beginner's course</div>
-                        </div>
-                        <div class="education_item">
-                            <div class="education_year">2011</div>
-                            <h3 class="education_post">Ryazan State Radio Engineering University named after V.F. Utkin</h3>
-                            <div class="education_place">Ryazan</div>
-                            <div class="education_description">Faculty of Computer Science, department of Computer Aided Design of Computing Facilities</div>
                         </div>
                     </section>
                 </div> <!--column_two-->
@@ -155,5 +186,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
