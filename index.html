@@ -23,7 +23,6 @@
                                 <li class="nav_item"><a href="#project" class="nav_link">Projects</a></li>
                                 <li class="nav_item"><a href="#language" class="nav_link">Languages</a></li>
                                 <li class="nav_item"><a href="#contact" class="nav_link">Contacts</a></li>
-                                <li class="nav_item"><a href="#code_example" class="nav_link">My Code</a></li>
                                 <li class="nav_item"><a href="#work_experience" class="nav_link">Experience</a></li>
                                 <li class="nav_item"><a href="#education" class="nav_link">Education</a></li>
                             </ul>
@@ -70,13 +69,17 @@
                         <h2 class="tittle_section">Pro skill</h2>
                         <ul class="list_skill">
                             <li class="item_skill">HTML/CSS</li>
-                            <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <div class="stars html"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                             <li class="item_skill">JavaScript Basics</li>
-                            <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <div class="stars js"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                             <li class="item_skill">Git, GitHub</li>
-                            <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <div class="stars git"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                             <li class="item_skill">VS Code</li>
-                            <div class="stars"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <div class="stars vscode"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <li class="item_skill">Node JS</li>
+                            <div class="stars node"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+                            <li class="item_skill">TypeScript</Script></li>
+                            <div class="stars ts"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
                         </ul>
                     </section>
                     <section class="language" id="language">
@@ -152,24 +155,62 @@
                     <section class="project" id="project">
                         <div class="tittle_image"><i class="fas fa-project-diagram"></i></div>
                         <h2 class="tittle_section">Projects</h2>
-                        <div class="project_inner">My first project: <a class="project_link" href="https://KateBlazhko.github.io/rsschool-cv/">CV</a>
+                        <div class="project_inner">
+                            <a class="project_link" href="https://rolling-scopes-school.github.io/kateblazhko-JSFE2022Q1//shelter/dom/">
+                                <img class="project_img" src="./assets/img/shelter.jpg" alt="Screenshort">
+                                <div>Project Shelter</div>
+                            </a>
+                            <a class="project_link" href="https://github.com/KateBlazhko/HTML-builder">
+                                <img class="project_img" src="./assets/img/html-builder.jpg" alt="Screenshort">
+                                <div>Project HTML-builder (Node.js)</div>
+                            </a>
+                            <a class="project_link" href="https://kateblazhko.github.io/virtual-keyboard/keyboard">
+                                <img class="project_img" src="./assets/img/virtual-keyboard.jpg" alt="Screenshort">
+                                <div>Project Virtual-keyboard</div>
+                            </a>
+                            <a class="project_link" href="https://rolling-scopes-school.github.io/kateblazhko-JSFEPRESCHOOL/memory-game/">
+                                <img class="project_img" src="./assets/img/memory.jpg" alt="Screenshort">
+                                <div>Project Memory-game</div>
+                            </a>
+                            <a class="project_link" href="https://kateblazhko.github.io/project-image-gallery/image-gallery/">
+                                <img class="project_img" src="./assets/img/image-gallery.jpg" alt="Screenshort">
+                                <div>Project Image-gallery</div>
+                            </a>
+                            <a class="project_link" href="https://kateblazhko.github.io/project-portfolio/portfolio/">
+                                <img class="project_img" src="./assets/img/portfolio.jpg" alt="Screenshort">
+                                <div>Project Portfolio</div>
+                            </a>                            
                         </div>
-                    </section>
-                    <section class="code_example" id="code_example">
-                        <div class="tittle_image"><i class="fab fa-js"></i></div>
-                        <h2 class="tittle_section">Code example</h2>
-                        <div class="code_example_inner">
-<pre class="code"><code class="language-javascript">function isDivideBy(number, a, b) {
-    if ((number % a === 0) &amp;&amp;
-        (number % b === 0)) {
-      return true;
-    }
-    return false;
-  }</code></pre>
-                        </div>
+
                     </section>
                 </div> <!--column_two-->
             </div> <!--main_inner-->
+            <section class="code_example" id="code_example">
+                <h2 class="tittle_section">Code example</h2>
+                <div class="code_example_inner">
+                <pre class="code"><code class="js-code">
+function quickSort(arr) {
+
+if (arr.length < 2) return arr
+
+const sortArr =arr.slice()
+const point = Math.floor(Math.random() * sortArr.length)
+const lessArr = [];
+const biggerArr = [];
+
+sortArr.forEach(item => {
+
+if (item < sortArr[point]) lessArr.push(item)
+if (item > sortArr[point]) biggerArr.push(item)
+});
+
+return [...quickSort(lessArr),
+        sortArr[point],
+        ...quickSort(biggerArr)]
+
+}               </code></pre>
+                </div>
+            </section>
         </div> <!--general_container-->
     </main>
     <footer class="footer">
@@ -181,7 +222,7 @@
                 </div>
                 <div class="footer_inner_item">
                     <img class="image_logo" src="https://rs.school/images/rs_school_js.svg" alt="logo">
-                    <span><a class="course_link" href="https://rs.school/js/">Курс «JavaScript/Frontend»</a></span>
+                    <a class="course_link" href="https://rs.school/js/">Курс «JavaScript/Frontend»</a>
                 </div>
             </div>
         </div>
