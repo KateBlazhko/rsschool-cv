@@ -61,7 +61,6 @@ li {
 /* General container */
 .general_container {
     max-width: 1420px;
-    padding: 0 20px 0 0;
     margin: 0 auto;
 
     overflow: hidden;
@@ -94,9 +93,9 @@ li {
 
 /* Header */
 .header_inner {
+    position: relative;
     display: flex;
     width: 100%;
-
 }
 
 .introduce_image {
@@ -109,13 +108,11 @@ li {
 }
 
 .introduce_wrap {
-    position: relative;
-
     display: flex;
     flex-direction: column;
     gap: 50px;
-    width: 70%;
-    padding-top: 20px;
+    width: 67%;
+    padding-right: 20px;
 }
 
 .nav_list {
@@ -207,6 +204,7 @@ li {
 }
 
 .introduce_statement_content {
+    padding-bottom: 20px;
     text-align: justify;
 }
 
@@ -229,7 +227,7 @@ li {
 
 .introduce_transform_main {
     position: relative;
-    left: -25px;
+    left: -35px;
 
     width: 70%;
     padding: 15px 80px;
@@ -264,7 +262,7 @@ li {
 
 .introduce_transform_secondary {
     position: relative;
-    right: -20px;
+    right: -10px;
 
     align-self: stretch;
     margin-left: -20px;
@@ -304,7 +302,6 @@ li {
 .pro_skill,
 .project,
 .language,
-.code_example,
 .contact        {
     padding: 0 0 20px 70px;
 }
@@ -320,12 +317,26 @@ li {
 .stars span:nth-child(1),
 .stars span:nth-child(2),
 .stars span:nth-child(3) {
-    color: #5e694f
+    color: #5e694f  
 }
 
 .stars span:nth-child(4),
 .stars span:nth-child(5) {
     color: #999999
+}
+
+.js span:nth-child(4) {
+    color: #5e694f
+}
+
+.node span:nth-child(2),
+.node span:nth-child(3) {
+    color: #999999  
+}
+
+.ts span:nth-child(2),
+.ts span:nth-child(3) {
+    color: #999999  
 }
 
 /* Column two */
@@ -350,6 +361,7 @@ li {
     font-style: normal;
     font-size: 16px;
     font-weight: 700;
+    line-height: 2;
     text-transform: uppercase;
     color: #262626;
 }
@@ -427,7 +439,6 @@ li {
 
 .education:hover .tittle_image,
 .work_experience:hover .tittle_image,
-.code_example:hover .tittle_image,
 .project:hover .tittle_image {
     transform: scale(1.3);
 }
@@ -475,21 +486,48 @@ li {
     padding: 0 0 15px 100px;
 }
 
-.code_example {
-    position: relative;
-    padding: 0 0 15px 100px;
+.project_inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 }
 
-.code_example_inner {
-    padding: 10px 0;
-    margin-left: -70px;
+.project_link {
+    flex-basis: 45%;
 
-    background: rgba(236, 236, 238, 0.6);
+    min-width: 350px;
+}
+
+.project_img {
+    display: block;
+    width: 100%;
+    
+    object-fit: cover;
+
+    transform: scale(0.95);
+    transition: transform 0.5s linear;
+
+}
+
+.project_img:hover {
+    transform: scale(1);
+}
+
+.code_example {
+    margin-top: 40px;
+    padding: 30px 0 0 70px;
+
+    background: rgba(236, 236, 238, 0.4);  
 }
 
 .code {
-    width: 90%;
-    margin: 0 auto;
+    margin: 0;
+}
+
+.js-code {
+    display: block;
 }
 
 /* Footer */
@@ -525,10 +563,14 @@ li {
     max-width: 1024px;
 }
 
+.tittle_image {
+    left: 40px;
+}
+
 .nav_wrap {
     position: fixed;
     top: 0px;
-    right: -620px;
+    right: -700px;
     z-index: 4;
     overflow: auto;
 
@@ -568,10 +610,88 @@ li {
 
 .introduce_statement {
     display: flex;
-    flex-direction: column;
     justify-content: start;
     align-self: center;
     width: 80%;
 }
 
+.column_one {
+    min-width: 300px;
+}
+
+.pro_skill,
+.language,
+.contact,
+.code_example {
+    padding: 0 0 20px 30px;
+}
+
+.work_experience,
+ .education,
+ .project {
+    padding: 0 0 15px 70px;
+}
+
+.work_year, .education_year {
+    position: absolute;
+    left: -55px;
+}
+
+}
+
+@media (max-width: 768px) {
+    .header_inner {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .introduce_wrap {
+        width: 100%;
+    }
+
+    .nav_wrap {
+        width: 100%;
+    }
+
+    .main_inner {
+        flex-wrap: wrap;
+    }
+
+    .column_one {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap ;
+        width: 100%;
+    }
+
+    .pro_skill,
+    .language,
+    .contact {
+        width: 100%;
+        padding-left: 70px;
+    }
+
+    .column_two {
+        width: 100%;
+    }
+
+    .project_inner {
+        margin-left: -35px;
+    }
+
+    .js-code {
+        overflow-y: hidden;
+        overflow-x: auto;
+        font-size: 14px;
+        line-height: 1;
+        letter-spacing: 0.01em;
+    }
+
+    .footer_inner {
+        flex-wrap: wrap;
+    }
+
+    .footer_inner_item {
+        padding-left: 30px;
+    }
 }
