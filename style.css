@@ -489,7 +489,7 @@ li {
 .project_inner {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: start;
     gap: 20px;
     width: 100%;
 }
@@ -506,13 +506,13 @@ li {
     
     object-fit: cover;
 
-    transform: scale(0.95);
+    transform: scale(1);
     transition: transform 0.5s linear;
 
 }
 
 .project_img:hover {
-    transform: scale(1);
+    transform: scale(1.03);
 }
 
 .code_example {
