@@ -517,7 +517,7 @@ li {
 
 .code_example {
     margin-top: 40px;
-    padding: 30px 0 0 70px;
+    padding: 30px 0 30px 70px;
 
     background: rgba(236, 236, 238, 0.4);  
 }
@@ -528,6 +528,10 @@ li {
 
 .js-code {
     display: block;
+
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 0.01em;
 }
 
 /* Footer */
@@ -683,8 +687,6 @@ li {
         overflow-y: hidden;
         overflow-x: auto;
         font-size: 14px;
-        line-height: 1;
-        letter-spacing: 0.01em;
     }
 
     .footer_inner {
