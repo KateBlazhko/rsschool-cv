@@ -342,7 +342,7 @@ li {
 /* Column two */
 .column_two {
     width: 70%;
-    padding: 30px 10px;
+    padding: 30px 20px 30px 0;
 }
 
 .education_item input,
@@ -574,7 +574,7 @@ li {
 .nav_wrap {
     position: fixed;
     top: 0px;
-    right: -700px;
+    right: calc(-1 * (100% - 330px));
     z-index: 4;
     overflow: auto;
 
@@ -654,6 +654,8 @@ li {
     }
 
     .nav_wrap {
+        right: -100%;
+
         width: 100%;
     }
 
@@ -666,6 +668,7 @@ li {
         justify-content: center;
         flex-wrap: wrap ;
         width: 100%;
+        margin-top: 20px;
     }
 
     .pro_skill,
@@ -679,8 +682,10 @@ li {
         width: 100%;
     }
 
-    .project_inner {
-        margin-left: -35px;
+    .project_link {
+        flex-basis: 45%;
+    
+        min-width: 280px;
     }
 
     .js-code {
@@ -695,5 +700,16 @@ li {
 
     .footer_inner_item {
         padding-left: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .project_inner {
+        width: 85%;
+    }
+    
+    .project_link {
+        min-width: fit-content;
     }
 }
