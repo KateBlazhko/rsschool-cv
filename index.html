@@ -189,25 +189,31 @@
                 <h2 class="tittle_section">Code example</h2>
                 <div class="code_example_inner">
                 <pre class="code"><code class="js-code">
-function quickSort(arr) {
+function quickSort(arr, left = 0, right = arr.length - 1) {
 
-if (arr.length < 2) return arr
+    if (arr.length < 2) return arr
 
-const sortArr =arr.slice()
-const point = Math.floor(Math.random() * sortArr.length)
-const lessArr = [];
-const biggerArr = [];
+    const point = Math.floor(Math.random() * (right - left + 1) + left)
 
-sortArr.forEach(item => {
+    let i = left;
+    let j = right;
 
-if (item < sortArr[point]) lessArr.push(item)
-if (item > sortArr[point]) biggerArr.push(item)
-});
+    while (i <= j) {
+        while (arr[i] < arr[point]) i++
+        while (arr[j] > arr[point]) j--
 
-return [...quickSort(lessArr),
-        sortArr[point],
-        ...quickSort(biggerArr)]
 
+        if (i <= j) {
+        [arr[i], arr[j]] = [arr[j], arr[i]]
+        i++
+        j--
+        }
+    }
+
+    if (i < right) quickSort2(arr, i, right)
+    if (j > left) quickSort2(arr, left, j)
+
+    return arr
 }               </code></pre>
                 </div>
             </section>
